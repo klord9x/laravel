@@ -15,3 +15,9 @@
 //     return view('welcome');
 // });
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
+
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
+Route::resource('sessions', 'SessionsController',
+	['only' => ['create', 'store', 'destroy']]
+	);
