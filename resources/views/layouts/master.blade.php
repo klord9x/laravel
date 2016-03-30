@@ -9,9 +9,9 @@
 
     <!-- Bootstrap -->
 	<!-- Latest compiled and minified CSS -->
-	{!! Html::style('/css/bootstrap.css') !!}
-	{!! Html::style('/css/style.css') !!}
+	{!! Html::style('/css/bootstrap.css') !!}	
 	{!! Html::style('/css/flexslider.css') !!}
+	{!! Html::style('/css/style.css') !!}
 
 	<!-- global js -->
     {!! Html::script('/js/jquery.min.js') !!}
@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand"><img src="./images/logo.png" alt="logo"></a>
+                <a href="/" class="navbar-brand"><img src="./images/logo.png" alt="logo"></a>
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse navmenus">
                 <div class="hotline">
@@ -86,22 +86,22 @@
                     <h3 class="titlel"><span>Các dòng xe<img src="./images/icon-3.png" alt="danh muc"></span></h3>
                     <div class="left-menus">
                         <ul class="left-menu">
-                            <li><a href="#">Toyota A</a></li>
-                            <li><a href="#">Toyota C </a></li>
-                            <li><a href="#">Toyota CLA</a></li>
-                            <li><a href="#">Toyota E </a></li>
-                            <li><a href="#">Toyota S </a></li>
-                            <li><a href="#">Toyota GLA</a></li>
-                            <li><a href="#">Toyota GLC</a></li>
-                            <li><a href="#">Toyota GLE</a></li>
-                            <li><a href="#">Toyota GLS</a></li>
-                            <li><a href="#">Toyota G</a></li>
-                            <li><a href="#">Toyota SLK </a></li>
-                            <li><a href="#">Toyota CLS</a></li>
-                            <li><a href="#">Toyota SL400</a></li>
-                            <li><a href="#">Toyota-AMG GTS</a></li>
-                            <li><a href="#">Toyota-AMG SLS 63</a></li>
-                            <li><a href="#">Toyota V</a></li>
+                            <li><a href="/chitiet">Toyota A</a></li>
+                            <li><a href="/chitiet">Toyota C </a></li>
+                            <li><a href="/chitiet">Toyota CLA</a></li>
+                            <li><a href="/chitiet">Toyota E </a></li>
+                            <li><a href="/chitiet">Toyota S </a></li>
+                            <li><a href="/chitiet">Toyota GLA</a></li>
+                            <li><a href="/chitiet">Toyota GLC</a></li>
+                            <li><a href="/chitiet">Toyota GLE</a></li>
+                            <li><a href="/chitiet">Toyota GLS</a></li>
+                            <li><a href="/chitiet">Toyota G</a></li>
+                            <li><a href="/chitiet">Toyota SLK </a></li>
+                            <li><a href="/chitiet">Toyota CLS</a></li>
+                            <li><a href="/chitiet">Toyota SL400</a></li>
+                            <li><a href="/chitiet">Toyota-AMG GTS</a></li>
+                            <li><a href="/chitiet">Toyota-AMG SLS 63</a></li>
+                            <li><a href="/chitiet">Toyota V</a></li>
                         </ul>
                         <button type="button" class="navbar-button">
                             <span class="icon-bar"></span>
@@ -111,115 +111,115 @@
                     </div>
                     <!-- Main menu -->
                     <ul class="mainmenu">
-                        <li><a href="#">Toyota A</a>
+                        <li><a href="/chitiet">Toyota A</a>
                             <ul>
-                                <li><a href="#">A200 2016</a></li>
-                                <li><a href="#">A250 Sport 2016</a></li>
+                                <li><a href="/chitiet">A200 2016</a></li>
+                                <li><a href="/chitiet">A250 Sport 2016</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota C </a>
+                        <li><a href="/chitiet">Toyota C </a>
                             <ul>
-                                <li><a href="#">C200</a></li>
-                                <li><a href="#">C250 Exclusive</a></li>
-                                <li><a href="#">C250 AMG</a></li>
-                                <li><a href="#">C300 AMG</a></li>
+                                <li><a href="/chitiet">C200</a></li>
+                                <li><a href="/chitiet">C250 Exclusive</a></li>
+                                <li><a href="/chitiet">C250 AMG</a></li>
+                                <li><a href="/chitiet">C300 AMG</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota CLA</a>
+                        <li><a href="/chitiet">Toyota CLA</a>
                             <ul>
-                                <li><a href="#">CLA200</a></li>
-                                <li><a href="#">CLA250 4Matic</a></li>
-                                <li><a href="#">CLA45 4Matic</a></li>
+                                <li><a href="/chitiet">CLA200</a></li>
+                                <li><a href="/chitiet">CLA250 4Matic</a></li>
+                                <li><a href="/chitiet">CLA45 4Matic</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota E </a>
+                        <li><a href="/chitiet">Toyota E </a>
                             <ul>
-                                <li><a href="#">E200 Edition E</a></li>
-                                <li><a href="#">E200</a></li>
-                                <li><a href="#">E250 AMG</a></li>
-                                <li><a href="#">E400 </a></li>
-                                <li><a href="#">E400 Cabriolet</a></li>
+                                <li><a href="/chitiet">E200 Edition E</a></li>
+                                <li><a href="/chitiet">E200</a></li>
+                                <li><a href="/chitiet">E250 AMG</a></li>
+                                <li><a href="/chitiet">E400 </a></li>
+                                <li><a href="/chitiet">E400 Cabriolet</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota S </a>
+                        <li><a href="/chitiet">Toyota S </a>
                             <ul>
-                                <li><a href="#">S400L</a></li>
-                                <li><a href="#">S500L</a></li>
-                                <li><a href="#">S63AMG 4Matic</a></li>
-                                <li><a href="#">S500 4Matic Coupe</a></li>
-                                <li><a href="#">S63AMG Coupe</a></li>
-                                <li><a href="#">S600 Maybach</a></li>
-                                <li><a href="#">S600 Pullman 2016</a></li>
+                                <li><a href="/chitiet">S400L</a></li>
+                                <li><a href="/chitiet">S500L</a></li>
+                                <li><a href="/chitiet">S63AMG 4Matic</a></li>
+                                <li><a href="/chitiet">S500 4Matic Coupe</a></li>
+                                <li><a href="/chitiet">S63AMG Coupe</a></li>
+                                <li><a href="/chitiet">S600 Maybach</a></li>
+                                <li><a href="/chitiet">S600 Pullman 2016</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota GLA</a>
+                        <li><a href="/chitiet">Toyota GLA</a>
                             <ul>
-                                <li><a href="#">GLA200</a></li>
-                                <li><a href="#">GLA250</a></li>
-                                <li><a href="#">GLA45 AMG</a></li>
-                                <li><a href="#">GLA45 AMG Edition 1</a></li>
+                                <li><a href="/chitiet">GLA200</a></li>
+                                <li><a href="/chitiet">GLA250</a></li>
+                                <li><a href="/chitiet">GLA45 AMG</a></li>
+                                <li><a href="/chitiet">GLA45 AMG Edition 1</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota GLC</a>
+                        <li><a href="/chitiet">Toyota GLC</a>
                             <ul>
-                                <li><a href="#">GLC250 2016</a></li>
-                                <li><a href="#">GLC300 2016</a></li>
+                                <li><a href="/chitiet">GLC250 2016</a></li>
+                                <li><a href="/chitiet">GLC300 2016</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota GLE</a>
+                        <li><a href="/chitiet">Toyota GLE</a>
                             <ul>
-                                <li><a href="#">GLE400 4Matic</a></li>
-                                <li><a href="#">GLE400 Exclusive</a></li>
-                                <li><a href="#">GLE400 Coupe</a></li>
-                                <li><a href="#">GLE450 AMG Coupe</a></li>
+                                <li><a href="/chitiet">GLE400 4Matic</a></li>
+                                <li><a href="/chitiet">GLE400 Exclusive</a></li>
+                                <li><a href="/chitiet">GLE400 Coupe</a></li>
+                                <li><a href="/chitiet">GLE450 AMG Coupe</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota GLS</a>
+                        <li><a href="/chitiet">Toyota GLS</a>
                             <ul>
-                                <li><a href="#">GLS350 CDI</a></li>
-                                <li><a href="#">GLS400 </a></li>
-                                <li><a href="#">GLS500 AMG</a></li>
-                                <li><a href="#">GLS63 AMG</a></li>
+                                <li><a href="/chitiet">GLS350 CDI</a></li>
+                                <li><a href="/chitiet">GLS400 </a></li>
+                                <li><a href="/chitiet">GLS500 AMG</a></li>
+                                <li><a href="/chitiet">GLS63 AMG</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota G</a>
+                        <li><a href="/chitiet">Toyota G</a>
                             <ul>
-                                <li><a href="#">G300 CDI</a></li>
-                                <li><a href="#">G500 Edition</a></li>
-                                <li><a href="#">G63 AMG</a></li>
+                                <li><a href="/chitiet">G300 CDI</a></li>
+                                <li><a href="/chitiet">G500 Edition</a></li>
+                                <li><a href="/chitiet">G63 AMG</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota SLK </a>
+                        <li><a href="/chitiet">Toyota SLK </a>
                             <ul>
-                                <li><a href="#">SLK350</a></li>
+                                <li><a href="/chitiet">SLK350</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota CLS</a>
+                        <li><a href="/chitiet">Toyota CLS</a>
                             <ul>
-                                <li><a href="#">CLS350 AMG</a></li>
-                                <li><a href="#">CLS400</a></li>
-                                <li><a href="#">CLS500 4Matic</a></li>
+                                <li><a href="/chitiet">CLS350 AMG</a></li>
+                                <li><a href="/chitiet">CLS400</a></li>
+                                <li><a href="/chitiet">CLS500 4Matic</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota SL400</a>
+                        <li><a href="/chitiet">Toyota SL400</a>
                             <ul>
-                                <li><a href="#">SL400 2Look</a></li>
+                                <li><a href="/chitiet">SL400 2Look</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota-AMG GTS</a>
+                        <li><a href="/chitiet">Toyota-AMG GTS</a>
                             <ul>
-                                <li><a href="#">AMG GTS</a></li>
+                                <li><a href="/chitiet">AMG GTS</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota-AMG SLS 63</a>
+                        <li><a href="/chitiet">Toyota-AMG SLS 63</a>
                             <ul>
-                                <li><a href="#">SLS AMG Coupe</a></li>
+                                <li><a href="/chitiet">SLS AMG Coupe</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Toyota V</a>
+                        <li><a href="/chitiet">Toyota V</a>
                             <ul>
-                                <li><a href="#">V116 CDI</a></li>
-                                <li><a href="#">V220 CDI</a></li>
+                                <li><a href="/chitiet">V116 CDI</a></li>
+                                <li><a href="/chitiet">V220 CDI</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -240,30 +240,30 @@
                 <div class="home-news">
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n100/Toyota-C300-AMG-2016-tai-Viet-Nam-Gia-xe-khoi-diem-1799-ty-dong-da-bao-gom-VAT.html"><img src="./images/IMG_5675.JPG" alt="Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T"></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T"></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n100/Toyota-C300-AMG-2016-tai-Viet-Nam-Gia-xe-khoi-diem-1799-ty-dong-da-bao-gom-VAT.html" title="Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T">Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T</a></h5>
+                        <h5><a href="/tintuc" title="Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T">Toyota C300 AMG 2016 tại Việt Nam. Giá xe khởi điểm 1.799 tỷ đồng đã bao gồm V.A.T</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n99/Hinh-anh-thuc-te-xe-Toyota-E200-Edition-E-2015-2016.html"><img src="./images/IMG_2411 - Copy.JPG" alt="Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 "></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 "></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n99/Hinh-anh-thuc-te-xe-Toyota-E200-Edition-E-2015-2016.html" title="Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 ">Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 </a></h5>
+                        <h5><a href="/tintuc" title="Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 ">Hình ảnh thực tế xe Toyota E200 Edition E 2015 2016 </a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n98/Toyota-AClass-ban-nang-cap-se-chinh-thuc-ra-mat-nam-2016.html"><img src="./images/Toyota-A-Class_2016_800x600_wallpaper_30 - Copy.jpg" alt="Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016."></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016."></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n98/Toyota-AClass-ban-nang-cap-se-chinh-thuc-ra-mat-nam-2016.html" title="Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016.">Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016.</a></h5>
+                        <h5><a href="/tintuc" title="Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016.">Toyota A-Class bản nâng cấp sẽ chính thức ra mắt năm 2016.</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n97/Tuan-le-thoi-trang-cua-ToyotaBenz-Viet-Nam-dang-dien-ra-tai-Ha-Noi.html"><img src="./images/nền fashion.jpg" alt="Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội."></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội."></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n97/Tuan-le-thoi-trang-cua-ToyotaBenz-Viet-Nam-dang-dien-ra-tai-Ha-Noi.html" title="Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội.">Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội.</a></h5>
+                        <h5><a href="/tintuc" title="Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội.">Tuần lễ thời trang của Toyota Việt Nam đang diễn ra tại Hà Nội.</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
@@ -278,30 +278,30 @@
                 <div class="home-news">
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n93/Gia-xe-Toyota-GLC-tot-nhat-nhan-dat-hang-ngay-hom-nay--Hotline-0909222022.html"><img src="./images/Toyota GLC (13).jpg" alt="Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022"></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022"></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n93/Gia-xe-Toyota-GLC-tot-nhat-nhan-dat-hang-ngay-hom-nay--Hotline-0909222022.html" title="Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022">Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022</a></h5>
+                        <h5><a href="/tintuc" title="Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022">Giá xe Toyota GLC tốt nhất, nhận đặt hàng ngay hôm nay | Hotline: 0909222022</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n91/Cong-nghe-ho-tro-phanh-moi-nhat-cua-Toyota-C300-2015.html"><img src="./images/2015_Toyota_C-Class_C300_4dr_Sedan_20L_4cyl_Turbo_7A_3977850.jpg" alt="Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015"></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015"></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n91/Cong-nghe-ho-tro-phanh-moi-nhat-cua-Toyota-C300-2015.html" title="Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015">Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015</a></h5>
+                        <h5><a href="/tintuc" title="Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015">Công nghệ hỗ trợ phanh mới nhất của Toyota C300 2015</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n89/Toyota-G63AMG-ben-nguoi-dep.html"><img src="./images/650x434xToyota-g63-amg-and-girl-10.jpg_pagespeed_ic_4rQd1cvUoO.jpg" alt="Toyota G63AMG bên người đẹp"></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Toyota G63AMG bên người đẹp"></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n89/Toyota-G63AMG-ben-nguoi-dep.html" title="Toyota G63AMG bên người đẹp">Toyota G63AMG bên người đẹp</a></h5>
+                        <h5><a href="/tintuc" title="Toyota G63AMG bên người đẹp">Toyota G63AMG bên người đẹp</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="news-content clearfix">
                         <div class="news-images">
-                            <a href="http://Toyotavietnamstar.vn/n88/Toyota-GLC-chinh-thuc-ra-mat-hinh-anh-thong-so-chi-tiet-cua-Toyota-GLC.html"><img src="./images/Toyota-GLC_2016_thumbnail_01.jpg" alt="Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC"></a>
+                            <a href="/tintuc"><img src="./images/flace2.png" alt="Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC"></a>
                         </div>
-                        <h5><a href="http://Toyotavietnamstar.vn/n88/Toyota-GLC-chinh-thuc-ra-mat-hinh-anh-thong-so-chi-tiet-cua-Toyota-GLC.html" title="Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC">Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC</a></h5>
+                        <h5><a href="/tintuc" title="Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC">Toyota GLC chính thức ra mắt, hình ảnh thông số chi tiết của Toyota GLC</a></h5>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
@@ -356,13 +356,13 @@
                         <div class="col-dls-8">
                             @ 2016 Bảng quyền thuộc sở hữu Toyotavietnamstar.vn
                             <br>
-                            <a href="http://phuongnamdesign.com/" target="_blank" rel="nofollow">Designed by PN2H Design</a>
+                            <a href="#" target="_blank" rel="nofollow">Designed by PN2H Design</a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="col-dls-5 footer-images">
-                    <img src="./images/footer_img.jpg" alt="avatar">
+                    <img src="./images/flace3.png" alt="avatar">
                 </div>
             </div>
         </div>

@@ -4,7 +4,6 @@
 
 @section('slider')
     @parent
-{{$variable1}}
     <!-- Slider product-->
     <section class="slider">
         <div class="container">
@@ -13,9 +12,9 @@
                     <div id="slider" class="flexslider">
                         <div class="flex-viewport" style="overflow: hidden; position: relative;">
                             <ul class="slides" style="width: 600%; transition-duration: 0s; transform: translate3d(-878px, 0px, 0px);">
-                                <li class="clone" aria-hidden="true" style="width: 878px; float: left; display: block;"><img src="./single_product_files/iris__38.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
-                                <li class="flex-active-slide" style="width: 878px; float: left; display: block;"><img src="./single_product_files/iris__38.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
-                                <li class="clone" aria-hidden="true" style="width: 878px; float: left; display: block;"><img src="./single_product_files/iris__38.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
+                                <li class="clone" aria-hidden="true" style="width: 878px; float: left; display: block;"><img src="./images/slider/slider1.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
+                                <li class="flex-active-slide" style="width: 878px; float: left; display: block;"><img src="./images/slider/slider2.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
+                                <li class="clone" aria-hidden="true" style="width: 878px; float: left; display: block;"><img src="./images/slider/slider3.jpg" alt="Mercedes E200 Edition E | Mercedes E200 giá tốt | Hotline: 0909222022" draggable="false"></li>
                             </ul>
                         </div>
                         <ol class="flex-control-nav flex-control-paging"></ol>
@@ -85,7 +84,7 @@
                     <div class="clearfix"></div>
                     <!-- Tabs -->
                     <div class="detail_news" id="tabs1">
-                        <h3 class="name_tab">Đánh giá</h3><img alt="" src="./single_product_files/mercedes trương chinh(1).png" style="height:288px;width:876px;">
+                        <h3 class="name_tab">Đánh giá</h3><img alt="" src="./images/chitiet.png" style="height:288px;width:876px;">
                         <br>
                         <br> Mercedes-Benz Việt Nam chính thức nâng cấp dòng xe sang Mercedes E200 ra mắt trong tháng 08/2015. Mercedes E200 sau khi nâng cấp có tên gọi mới là <a href="http://mercedesvietnamstar.vn/n51/MercedesBenz-Viet-Nam-nang-cap-E200-Edition-E-2015.html">Mercedes E200 Edition E</a> sẽ thay đổi về ngoại thất cũng như nội thất.
                         <br> Về Ngoại thất Mercedes E200 Edition E trang bị gói AMG thể thao bao gồm cản trước, cản sau và logo lưới tản nhiệt giống như Mercedes E250 2014. Điểm nhấn đặc biệt ngoại thất của Mercedes E200 Edition E là trang bị bộ mâm 5 cánh đôi 18 inch đậm chất thể thao mạnh mẽ, phía bên hông xe là logo "Editon E" nhằm phân biệt với dòng xe Mercedes E250 trước đó.
@@ -149,8 +148,8 @@
                         <br> Đồng hồ hiển thị nhiệt độ ngoài trời.
                         <br>
                         <br><strong>Một số hình ảnh Mercedes E200 Edition E:</strong>
-                        <br><img alt="mercedes e200 edition e" src="./single_product_files/iris__38(1).jpg" style="height:390px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__39.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__40.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__41.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__42.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__43.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__45.jpg" style="height:587px;width:880px;"><img alt="mercedes e200 edition e" src="./single_product_files/iris__48.jpg" style="height:587px;width:880px;">
-                        <br><img alt="mercedes e200" src="./single_product_files/3112035_E-200-Edition-E-201500003.jpg" style="height:323px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112037_E-200-Edition-E-201500006.jpg" style="height:347px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112038_E-200-Edition-E-201500007.jpg" style="height:348px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112043_E-200-Edition-E-201500013.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112044_E-200-Edition-E-201500014.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112045_E-200-Edition-E-201500015.jpg" style="height:524px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112046_E-200-Edition-E-201500016.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112047_E-200-Edition-E-201500017.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112048_E-200-Edition-E-201500018.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112049_E-200-Edition-E-201500019.jpg" style="height:542px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112050_E-200-Edition-E-201500020.jpg" style="height:533px;width:800px;"><img alt="mercedes e200" src="./single_product_files/3112052_E-200-Edition-E-201500022.jpg" style="height:533px;width:800px;">
+                        <br>
+                        <img alt="mercedes e200 edition e" src="./images/sanpham1.png" style="height:390px;width:880px;">
                         <br>
                         <br> Bảng giá xe Mercedes E-Class đã bao gồm V.A.T:
                         <ul>
@@ -189,7 +188,7 @@
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html"><img src="./single_product_files/E200 (1).jpg" alt="E200"></a>
+                                    <a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html"><img src="./images/flace.png" alt="E200"></a>
                                 </div>
                                 <h4><a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html">E200</a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 1.999.000.000 VNĐ</span><span class="spleft spright"></span></div>
@@ -198,7 +197,7 @@
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html"><img src="./single_product_files/E250 (14).jpg" alt="E250 AMG"></a>
+                                    <a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html"><img src="./images/flace.png" alt="E250 AMG"></a>
                                 </div>
                                 <h4><a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html">E250 AMG</a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 2.329.000.000 VNĐ</span><span class="spleft spright"></span></div>
@@ -207,7 +206,7 @@
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-15/E400.html"><img src="./single_product_files/AMG4.jpg" alt="E400 "></a>
+                                    <a href="http://mercedesvietnamstar.vn/dong-xe-15/E400.html"><img src="./images/flace.png" alt="E400 "></a>
                                 </div>
                                 <h4><a href="http://mercedesvietnamstar.vn/dong-xe-15/E400.html">E400 </a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 2.879.000.000 VNĐ</span><span class="spleft spright"></span></div>

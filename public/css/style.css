@@ -2,15 +2,15 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("fonts/Roboto-Condensed.woff") format('woff');
-  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("fonts/RobotoCondensed-Regular.ttf") format('truetype');
+  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("fonts/Roboto-Condensed-webfont.woff") format('woff');
+  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("fonts/Roboto-Condensed-webfont.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Roboto Condensed Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto Condensed Bold'), url("fonts/Roboto-Condensed.woff") format('woff');
-  src: local('Roboto Condensed Bold'), url("fonts/RobotoCondensed-Bold.ttf") format('truetype');
+  src: local('Roboto Condensed Bold'), url("fonts/Roboto-BoldCondensed-webfont.woff") format('woff');
+  src: local('Roboto Condensed Bold'), url("fonts/Roboto-BoldCondensed-webfont.ttf") format('truetype');
 }
 body{color:#000;text-rendering: geometricPrecision;}
 a{-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;}
@@ -142,7 +142,7 @@ ul.mainmenu > li > ul > li > a:hover{text-decoration:underline;}
 .detail-inf{padding-top:15px;font-size:14px;}h2.name-detail{color:#000;font-size:26px;line-height:30px;font-weight:bold;margin-top:0;}h3.price-detail{font-size:1.6em;color:#0069cc;margin-bottom:10px;font-weight:bold;margin-top:5px;}
 .tuvan{padding-top:10px;border-top:1px dashed #cfcfcf;}
 .tuvan .hotline{background:#0069cc;color:#fff;margin-top:0;float:none;margin-left:0;padding:6px 5px 6px 40px !important;border-radius:6px;}
-.tuvan .hotline h2{font-size:26px;background:url(../images/icon-phone2.png) no-repeat left top;padding-left:40px;height:36px;line-height:36px;font-weight:bold;margin-left:-40px;}
+.tuvan .hotline h2{font-size:26px;background:url(../images/icon-phone.png) no-repeat left top;padding-left:40px;height:36px;line-height:36px;font-weight:bold;margin-left:-40px;}
 .tuvan .hotline h2 a{color:#fff;}
 .tuvan .supporth{margin-top:0;margin-bottom:15px;float:left;text-align:left;float:none;font-weight:bold;}
 .tuvan h2.supporth span{font-weight:normal;font-size:13px;}
