@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Page home index.php')
+@section('title', 'Trang chủ')
 
 @section('slider')
     @parent
@@ -15,7 +15,7 @@
                         <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1170px, 0px, 0px);">
                             <li class="clone" aria-hidden="true" style="width: 1170px; float: left; display: block;"><img src="http://lorempixel.com/1170/400/animals/1" alt="slide" draggable="false"></li>
                             <li class="flex-active-slide" style="width: 1170px; float: left; display: block;"><img src="http://lorempixel.com/1170/400/animals/2" alt="slide" draggable="false"></li>
-                            <li style="width: 1170px; float: left; display: block;" class=""><img src=".http://lorempixel.com/1170/400/animals/3" alt="slide" draggable="false"></li>
+                            <li style="width: 1170px; float: left; display: block;" class=""><img src="http://lorempixel.com/1170/400/animals/3" alt="slide" draggable="false"></li>
                             <li style="width: 1170px; float: left; display: block;" class=""><img src="http://lorempixel.com/1170/400/animals/4" alt="slide" draggable="false"></li>
                             <li class="clone" aria-hidden="true" style="width: 1170px; float: left; display: block;"><img src="http://lorempixel.com/1170/400/animals/5" alt="slide" draggable="false"></li>
                         </ul>

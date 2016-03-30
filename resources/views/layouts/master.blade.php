@@ -310,6 +310,18 @@
             <!-- End tin cong nghe -->
         </div>
     </section>
+
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+    </script>
+
     <!-- End content center -->
 
     <!-- Infor footer -->
