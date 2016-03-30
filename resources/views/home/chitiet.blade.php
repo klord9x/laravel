@@ -19,8 +19,8 @@
                         </div>
                         <ol class="flex-control-nav flex-control-paging"></ol>
                         <ul class="flex-direction-nav">
-                            <li><a class="flex-prev flex-disabled" href="http://mercedesvietnamstar.vn/dong-xe-53/E200-Edition-E.html#" tabindex="-1">Previous</a></li>
-                            <li><a class="flex-next flex-disabled" href="http://mercedesvietnamstar.vn/dong-xe-53/E200-Edition-E.html#" tabindex="-1">Next</a></li>
+                            <li><a class="flex-prev flex-disabled" href="#" tabindex="-1">Previous</a></li>
+                            <li><a class="flex-next flex-disabled" href="#" tabindex="-1">Next</a></li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="detail_news" id="tabs1">
                         <h3 class="name_tab">Đánh giá</h3><img alt="" src="./images/chitiet.png" style="height:288px;width:876px;">
                         <br>
-                        <br> Mercedes-Benz Việt Nam chính thức nâng cấp dòng xe sang Mercedes E200 ra mắt trong tháng 08/2015. Mercedes E200 sau khi nâng cấp có tên gọi mới là <a href="http://mercedesvietnamstar.vn/n51/MercedesBenz-Viet-Nam-nang-cap-E200-Edition-E-2015.html">Mercedes E200 Edition E</a> sẽ thay đổi về ngoại thất cũng như nội thất.
+                        <br> Mercedes-Benz Việt Nam chính thức nâng cấp dòng xe sang Mercedes E200 ra mắt trong tháng 08/2015. Mercedes E200 sau khi nâng cấp có tên gọi mới là <a href="/chitiet">Mercedes E200 Edition E</a> sẽ thay đổi về ngoại thất cũng như nội thất.
                         <br> Về Ngoại thất Mercedes E200 Edition E trang bị gói AMG thể thao bao gồm cản trước, cản sau và logo lưới tản nhiệt giống như Mercedes E250 2014. Điểm nhấn đặc biệt ngoại thất của Mercedes E200 Edition E là trang bị bộ mâm 5 cánh đôi 18 inch đậm chất thể thao mạnh mẽ, phía bên hông xe là logo "Editon E" nhằm phân biệt với dòng xe Mercedes E250 trước đó.
                         <br> Điểm khác biệt nội thất của Mercedes E200 Edition E bao gồm tay lái thể thao 3 chấu, hệ thống CD màn hình 7 inch tích hợp bản đồ GPS Việt Nam tiện lợi cho khách hàng.
                         <br>
@@ -153,10 +153,10 @@
                         <br>
                         <br> Bảng giá xe Mercedes E-Class đã bao gồm V.A.T:
                         <ul>
-                            <li><a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html">Mercedes E200: 1.939.000.000 VNĐ</a></li>
-                            <li><a href="http://mercedesvietnamstar.vn/dong-xe-53/E200-Edition-E.html">Mercedes E200 Edition E: 1.989.000.000 VNĐ</a></li>
-                            <li><a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html">Mercedes E250AMG: 2.259.000.000 VNĐ</a></li>
-                            <li><a href="http://mercedesvietnamstar.vn/dong-xe-15/E400-AMG.html">Mercedes E400: 2.799.000.000 VNĐ</a></li>
+                            <li><a href="/chitiet">Mercedes E200: 1.939.000.000 VNĐ</a></li>
+                            <li><a href="/chitiet">Mercedes E200 Edition E: 1.989.000.000 VNĐ</a></li>
+                            <li><a href="/chitiet">Mercedes E250AMG: 2.259.000.000 VNĐ</a></li>
+                            <li><a href="/chitiet">Mercedes E400: 2.799.000.000 VNĐ</a></li>
                        </ul>
                        <span style="font-size:10.5pt;">Liên hệ ngay với chúng tôi để:<br>
                         - Tư vấn mua xe phù hợp.<br>
@@ -188,27 +188,27 @@
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html"><img src="./images/flace.png" alt="E200"></a>
+                                    <a href="/chitiet"><img src="./images/flace.png" alt="E200"></a>
                                 </div>
-                                <h4><a href="http://mercedesvietnamstar.vn/dong-xe-12/E200.html">E200</a></h4>
+                                <h4><a href="/chitiet">E200</a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 1.999.000.000 VNĐ</span><span class="spleft spright"></span></div>
                             </div>
                         </div>
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html"><img src="./images/flace.png" alt="E250 AMG"></a>
+                                    <a href="/chitiet"><img src="./images/flace.png" alt="E250 AMG"></a>
                                 </div>
-                                <h4><a href="http://mercedesvietnamstar.vn/dong-xe-14/E250-AMG.html">E250 AMG</a></h4>
+                                <h4><a href="/chitiet">E250 AMG</a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 2.329.000.000 VNĐ</span><span class="spleft spright"></span></div>
                             </div>
                         </div>
                         <div class="product">
                             <div class="products">
                                 <div class="product_img">
-                                    <a href="http://mercedesvietnamstar.vn/dong-xe-15/E400.html"><img src="./images/flace.png" alt="E400 "></a>
+                                    <a href="/chitiet"><img src="./images/flace.png" alt="E400 "></a>
                                 </div>
-                                <h4><a href="http://mercedesvietnamstar.vn/dong-xe-15/E400.html">E400 </a></h4>
+                                <h4><a href="/chitiet">E400 </a></h4>
                                 <div class="product_price"><span class="spleft"></span><span class="spcenter">Giá: 2.879.000.000 VNĐ</span><span class="spleft spright"></span></div>
                             </div>
                         </div>
