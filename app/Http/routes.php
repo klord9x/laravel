@@ -11,13 +11,44 @@
 |
 */
 
-// Route::get('/', function () {
+// Route::get('foo', function () {
 //     return view('welcome');
 // });
+// Route for demo design Front-end
+// site: mercedesvietnamstar.vn
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
+Route::get('gioithieu', array('as' => 'home', 'uses' => 'HomeController@gioithieu'));
+Route::get('sanpham', array('as' => 'home', 'uses' => 'HomeController@sanpham'));
+Route::get('chitiet', array('as' => 'home', 'uses' => 'HomeController@chitiet'));
+Route::get('khuyenmai', array('as' => 'home', 'uses' => 'HomeController@khuyenmai'));
+Route::get('tintuc', array('as' => 'home', 'uses' => 'HomeController@tintuc'));
+Route::get('lienhe', array('as' => 'home', 'uses' => 'HomeController@lienhe'));
 
-Route::get('login', 'SessionsController@create');
-Route::get('logout', 'SessionsController@destroy');
-Route::resource('sessions', 'SessionsController',
-	['only' => ['create', 'store', 'destroy']]
-	);
+# Register2
+// Route::get('gioithieu', function () {
+// 	echo "Hello";
+// 	//return view('home.gioithieu');
+// });
+// Route::get('gioithieu', function () {
+//     return view('home.gioithieu');
+// });
+
+// Route::group(['prefix' => 'admin'], function() {
+//     Route::get('/', 'HomeController@index');
+// });
+
+// Route::group(['prefix' => ''], function() {
+//     Route::get('gioithieu', 'HomeController@gioithieu');
+//  //    Route::get('gioithieu', function () {
+// 	//     return 'Hello World';
+// 	// });
+// });
+
+// Route::get('login', 'SessionsController@create');
+// Route::get('logout', 'SessionsController@destroy');
+// Route::resource('sessions', 'SessionsController',
+// 	['only' => ['create', 'store', 'destroy']]
+// );
+// Route::resource('session', 'SessionController',
+// 	['only' => ['create', 'store', 'destroy']]
+// );

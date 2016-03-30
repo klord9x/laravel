@@ -2,9 +2,10 @@
 
 @section('title', 'Page home index.php')
 
-@section('sidebar')
+@section('slider')
     @parent
-{{$variable1}}
+<!-- {{$variable1}}
+{{$infors['name']}} -->
     <!-- Slider  homeslide-->
     <section class="slider">
         <div class="container">
@@ -34,6 +35,17 @@
     </section>
     <!-- End Slider homeslide-->
 @endsection
+
+<!-- Informaster -->
+@section('infomaster')
+    <div class="infomaster">
+        <div class="hotline">
+            <h2>{{$infors['mobile']}}</h2> Hỗ trợ 24/7
+        </div>
+        <h2 class="supporth"><span>Trưởng nhóm bán hàng</span><br>{{$infors['name']}}</h2>
+    </div>
+@endsection
+<!-- End informaster -->
 
 @section('right-content')
     <!-- Right content -->
