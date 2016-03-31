@@ -2,15 +2,15 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("fonts/Roboto-Condensed-webfont.woff") format('woff');
-  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("fonts/Roboto-Condensed-webfont.ttf") format('truetype');
+  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("../fonts/Roboto-Condensed-webfont.woff") format('woff');
+  src: local('Roboto Condensed Regular'), local('Roboto-Condensed-webfont'), url("../fonts/Roboto-Condensed-webfont.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Roboto Condensed Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto Condensed Bold'), url("fonts/Roboto-BoldCondensed-webfont.woff") format('woff');
-  src: local('Roboto Condensed Bold'), url("fonts/Roboto-BoldCondensed-webfont.ttf") format('truetype');
+  src: local('Roboto Condensed Bold'), url("../fonts/Roboto-BoldCondensed-webfont.woff") format('woff');
+  src: local('Roboto Condensed Bold'), url("../fonts/Roboto-BoldCondensed-webfont.ttf") format('truetype');
 }
 body{color:#000;text-rendering: geometricPrecision;}
 a{-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;}
