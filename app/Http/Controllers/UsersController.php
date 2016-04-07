@@ -5,11 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use Auth;
-use Redirect;
 use Input;
+use Hash;
+use App\User;
+use Redirect;
 
-class SessionsController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,7 +30,7 @@ class SessionsController extends Controller
     public function create()
     {
         //
-        return view('sessions.create');
+        return view('users.create');
     }
 
     /**
@@ -41,16 +42,12 @@ class SessionsController extends Controller
     public function store(Request $request)
     {
         //
-        $attempt = Auth::attempt([
-            'email' => Input::get('email'),
-            'password' => Input::get('password')
-            ], Input::get('remember_me') =='1');
+        $data = Input::all();
+        $data['password'] = Hash::make($data['password']);
 
-        if($attempt) {
-            return Redirect::to('/')->with('alert', 'You have been logged in');
-        } else {
-            return Redirect::back()->with('alert', 'Incorrect login')->withInput();
-        }
+        $user = User::create($data);
+
+        return Redirect::to('login')->with('alert', 'Signup successful, you and now login');
     }
 
     /**
@@ -93,10 +90,8 @@ class SessionsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy()
+    public function destroy($id)
     {
         //
-        Auth::logout();
-        return Redirect::to('/');
     }
 }

@@ -49,6 +49,12 @@ Route::get('logout', 'SessionsController@destroy');
 Route::resource('sessions', 'SessionsController',
 	['only' => ['create', 'store', 'destroy']]
 );
+
+//Users:
+Route::get('signup', 'UsersController@create');
+Route::resource('users', 'UsersController',
+	['only' => ['create', 'store']]
+);
 // Route::resource('session', 'SessionController',
 // 	['only' => ['create', 'store', 'destroy']]
 // );
