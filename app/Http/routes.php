@@ -44,11 +44,11 @@ Route::get('lienhe', array('as' => 'home', 'uses' => 'HomeController@lienhe'));
 // 	// });
 // });
 
-// Route::get('login', 'SessionsController@create');
-// Route::get('logout', 'SessionsController@destroy');
-// Route::resource('sessions', 'SessionsController',
-// 	['only' => ['create', 'store', 'destroy']]
-// );
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
+Route::resource('sessions', 'SessionsController',
+	['only' => ['create', 'store', 'destroy']]
+);
 // Route::resource('session', 'SessionController',
 // 	['only' => ['create', 'store', 'destroy']]
 // );

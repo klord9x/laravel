@@ -4,6 +4,11 @@
 
 @section('slider')
     @parent
+    @if (Auth::check())
+        You are logged in. {!! Html::link('logout', 'Logout') !!}
+    @else
+        You are not logged in. {!! Html::link('login', 'Login') !!}
+    @endif
 <!-- {{$variable1}}
 {{$infors['name']}} -->
     <!-- Slider  homeslide-->

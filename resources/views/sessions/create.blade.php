@@ -15,14 +15,14 @@
 
     <!-- Title form input -->
     <div class="form-group">
-        {!! Form::label('user', 'User name:') !!}
-        {!! Form::text('user', null, ['class' => 'form-control']) !!}
+        {!! Form::label('email', 'Email:') !!}
+        {!! Form::text('email', null, ['class' => 'form-control']) !!}
     </div>
 
     <!-- Content form input -->
     <div class="form-group">
-        {!! Form::label('passwd', 'Pass word:') !!}
-        {!! Form::text('passwd', null, ['class' => 'form-control']) !!}
+        {!! Form::label('password', 'Pass word:') !!}
+        {!! Form::password('password', null, ['class' => 'form-control']) !!}
     </div>
     <div>
     	{!! Form::submit('Login') !!}

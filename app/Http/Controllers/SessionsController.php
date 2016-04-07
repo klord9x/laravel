@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Auth;
+use Redirect;
+use Input;
 
 class SessionsController extends Controller
 {
@@ -38,6 +41,16 @@ class SessionsController extends Controller
     public function store(Request $request)
     {
         //
+        $attempt = Auth::attempt([
+            'email' => Input::get('email'),
+            'password' => Input::get('password')
+            ]);
+
+        if($attempt) {
+            return Redirect::to('/');
+        } else {
+            return Redirect::back();
+        }
     }
 
     /**
@@ -83,5 +96,7 @@ class SessionsController extends Controller
     public function destroy($id)
     {
         //
+        Auth::logout();
+        return Redirect::to('/');
     }
 }
