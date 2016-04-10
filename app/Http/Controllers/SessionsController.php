@@ -47,7 +47,8 @@ class SessionsController extends Controller
             ], Input::get('remember_me') =='1');
 
         if($attempt) {
-            return Redirect::to('/')->with('alert', 'You have been logged in');
+            //Remember đích định cho login:
+            return Redirect::intended('/')->with('alert', 'You have been logged in');
         } else {
             return Redirect::back()->with('alert', 'Incorrect login')->withInput();
         }

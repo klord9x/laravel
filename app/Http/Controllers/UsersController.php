@@ -9,6 +9,8 @@ use Input;
 use Hash;
 use App\User;
 use Redirect;
+use Validator;
+use Auth;
 
 class UsersController extends Controller
 {
@@ -43,8 +45,18 @@ class UsersController extends Controller
     {
         //
         $data = Input::all();
-        $data['password'] = Hash::make($data['password']);
+        // var_dump($request->all());
+        // die('$request');
 
+        $validator = Validator::make($data,[
+            'email' => 'required|email|unique:users',
+            'password'=> 'required|confirmed'
+            ]);
+        if ($validator->fails()) {
+            return Redirect::back()->withErrors($validator)->withInput($data);
+        }
+
+        $data['password'] = Hash::make($data['password']);
         $user = User::create($data);
 
         return Redirect::to('login')->with('alert', 'Signup successful, you and now login');
@@ -56,9 +68,10 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
         //
+        return view('users.show', array('user' => Auth::user()));
     }
 
     /**

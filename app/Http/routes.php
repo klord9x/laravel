@@ -17,12 +17,12 @@
 // Route for demo design Front-end
 // site: mercedesvietnamstar.vn
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@index'));
-Route::get('gioithieu', array('as' => 'home', 'uses' => 'HomeController@gioithieu'));
-Route::get('sanpham', array('as' => 'home', 'uses' => 'HomeController@sanpham'));
-Route::get('chitiet', array('as' => 'home', 'uses' => 'HomeController@chitiet'));
-Route::get('khuyenmai', array('as' => 'home', 'uses' => 'HomeController@khuyenmai'));
-Route::get('tintuc', array('as' => 'home', 'uses' => 'HomeController@tintuc'));
-Route::get('lienhe', array('as' => 'home', 'uses' => 'HomeController@lienhe'));
+// Route::get('gioithieu', array('as' => 'home', 'uses' => 'HomeController@gioithieu'));
+// Route::get('sanpham', array('as' => 'home', 'uses' => 'HomeController@sanpham'));
+// Route::get('chitiet', array('as' => 'home', 'uses' => 'HomeController@chitiet'));
+// Route::get('khuyenmai', array('as' => 'home', 'uses' => 'HomeController@khuyenmai'));
+// Route::get('tintuc', array('as' => 'home', 'uses' => 'HomeController@tintuc'));
+// Route::get('lienhe', array('as' => 'home', 'uses' => 'HomeController@lienhe'));
 
 # Register2
 // Route::get('gioithieu', function () {
@@ -52,9 +52,23 @@ Route::resource('sessions', 'SessionsController',
 
 //Users:
 Route::get('signup', 'UsersController@create');
+//Auth:
+
+//Route::get('profile', array('before' => 'auth', 'uses' => 'UsersController@show'));
+Route::group(['middleware' => 'auth'], function() {
+
+	Route::get('profile', array('uses' => 'UsersController@show'));
+});
 Route::resource('users', 'UsersController',
 	['only' => ['create', 'store']]
 );
+
+
 // Route::resource('session', 'SessionController',
 // 	['only' => ['create', 'store', 'destroy']]
 // );
+// Route::group(['middleware' => 'web'], function () {
+//     Route::auth();
+
+//     Route::get('/home', 'HomeController@index');
+// });
