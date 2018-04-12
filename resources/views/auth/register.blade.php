@@ -1,3 +1,4 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +9,7 @@
                 <div class="panel-heading">Register</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form id = "register" class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -87,3 +88,29 @@
     </div>
 </div>
 @endsection
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $('button').click(function() {
+        event.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('register') }}",
+            data: $('form#register').serialize(),
+            dataType: 'json',
+            success: function(data){
+                console.log(data);
+             },
+              error: function(data, statusText, xhr){
+                var response = data.responseJSON;
+                var errors = response.errors;
+                for (name in errors) {
+                    message = errors[name][0];
+                    $('#'+name).after('<span class="help-block"><strong>'+ message +'</strong></span>');
+                }
+            }
+        })
+    });
+})
+</script>

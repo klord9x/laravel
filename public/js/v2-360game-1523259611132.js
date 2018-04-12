@@ -1,0 +1,15 @@
+var portalURL="";
+var script360={isGetListApps:0,isGetListGameRecent:0,showListApps:function(){if(0==script360.isGetListApps){script360.isGetListApps=1;var e=portalURL+"/script/list-apps-header?callback=?";$.getJSON(e,function(e){0==e.err&&$("#list_apps_header").html(e.data)})}},showGameRecent:function(){if(0==script360.isGetListGameRecent){script360.isGetListGameRecent=1;var e=portalURL+"/script/list-game-recent-header?callback=?";$.getJSON(e,function(e){0==e.err&&$("#list_game_recent_header").html(e.data)})}},trackingClick:function(e){zm.get(e,function(){})},fillDataLogin:function(){var e=portalURL+"/script/ajax/fill-data-login?appName="+config360game.app_name+"&callback=?";$.getJSON(e,function(e){0==e.err&&($("#ved_section2 .inner .banner-topmain").remove(),$("#ved_section2 .inner .rightBlock").remove(),$("#ved_section2 .inner").append(e.data),window.dataLayer=window.dataLayer||[],dataLayer.push({vip_Level:e.vip_level+""}))})}};$(document).ready(function(){var e=window.location.href.split("?")[0].indexOf("play-game");if(parseInt(config360game.show_header)>0&&0==$("#ved_section2").length&&0==$("#ved_section2_small").length){var a='<link rel="stylesheet" href="//css.f.360game.vn/v1/css/360game-header_1.19.css" type="text/css"/>';e>0&&(a='<link rel="stylesheet" href="//css.f.360game.vn/v1/css/360game-header_play_1.04.css" type="text/css"/>'),$("head").append(a);var t="";void 0!=config360game.is_play&&(t="&isPlay="+config360game.is_play);var i=portalURL+"/script/header-mainsite?appName="+config360game.app_name+"&play="+e+t+"&callback=?";$.getJSON(i,function(e){0==e.err&&($("body").append(e.data),$("#alert_message").animate({opacity:1,height:"toggle"},1e3,function(){$("#alert_message").delay(3e3).slideToggle()}))})}var n=window.location.search;if(n.length>1&&(n=n.substring(1)),e>=0&&0==$("#360track").length){var i=portalURL+"/script/play-game?appName="+config360game.app_name+"&userName="+config360game.zing_account+"&"+n;$("body").append('<div id="360track" style="width:0px;height:0px;overflow:hidden"><img src="'+i+'" width="0" height="0" alt="360game"/></div>')}if(0==$("#ifr_trackinggame").length){var s=portalURL+"/script/tracking-game?play="+e+"&appName="+config360game.app_name+"&userName="+config360game.zing_account+"&"+n;$("body").append('<iframe id="ifr_trackinggame" src="'+s+'" height="0" width="0" style="display:none;visibility:hidden"></iframe>')}if(0==$("#360log").length){var p="//360game.apps.zing.vn/log/tracking?appName="+config360game.app_name+"&userName="+config360game.zing_account+"&"+n;$("body").append('<div id="360log" style="width:0px;height:0px;overflow:hidden"><img src="'+p+'" width="0" height="0" alt="360log"/></div>')}});
+
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = 'js/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', "222190257975815"]);
+window._fbq = window._fbq || [];
+window._fbq.push(["track", "PixelInitialized", {}]);

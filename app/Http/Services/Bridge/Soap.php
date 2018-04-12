@@ -6,53 +6,15 @@ use Artisaninweb\SoapWrapper\SoapWrapper;
 
 final class Soap extends AbstractWebService
 {
-    //Config global
-    protected $domain = 'http://dev.pp.100d.mobi';
-    protected $wsdlUri = '';
-    public $secret = '^$!Ju$PCak)v@(Nv8Cy(';
-    public $key = '$zc*E!8r5Mn#6%@@^%z#';
-    public $agent = 'wg001';
-    public $encryptKey = 'xR4IMJ(!*(X%&976@H#C'; //'encryptKey'        => 'xR4IMJ(!*(X%&976@H#C',
-
-
-    public $username;
-    public $sign;
-    public $password;
-    public $soapWrapper;
-
-    //Passport:
-    const WRAPPER_PASSPORT = 'Passport';
-    const PASSPORT_FUNCTION_LOGIN = 'authenticatePassport';
-    const PASSPORT_FUNCTION_REGISTER = 'registerPassport';
-    const PASSPORT_FUNCTION_ACTIVE = 'activatePassport';
-    const PASSPORT_FUNCTION_CHECK_USER = 'checkuserPassport';
-    const PASSPORT_FUNCTION_PROFILE = 'profilePassport';
-    const PASSPORT_FUNCTION_PROFILE_UPDATE = 'updateProfilePassport';
-    const PASSPORT_FUNCTION_PASSWORD_CHANGE = 'changePasswordPassport';
-    const PASSPORT_FUNCTION_PASSWORD_FORGOT = 'forgotPasswordPassport';
-    const PASSPORT_FUNCTION_PASSWORD_RESET = 'resetPasswordPassport';
-
-    //Payment:
-
-    public $uriList = [
-        self::PASSPORT_FUNCTION_REGISTER => '/passport/register/wsdl',
-        self::PASSPORT_FUNCTION_ACTIVE => '/passport/activate/wsdl',
-        self::PASSPORT_FUNCTION_LOGIN => '/passport/authenticate/wsdl',
-        self::PASSPORT_FUNCTION_CHECK_USER => '/passport/checkuser/wsdl',
-        self::PASSPORT_FUNCTION_PROFILE => '/passport/profile/wsdl',
-        self::PASSPORT_FUNCTION_PROFILE_UPDATE => '/passport/updateprofile/wsdl',
-        self::PASSPORT_FUNCTION_PASSWORD_CHANGE => '/passport/changepassword/wsdl',
-        self::PASSPORT_FUNCTION_PASSWORD_FORGOT => '/passport/forgotpassword/wsdl',
-        self::PASSPORT_FUNCTION_PASSWORD_RESET => '/passport/resetpassword/wsdl',
-    ];
-
     /**
      * Soap constructor.
      * @param SoapWrapper $soapWrapper
+     * @param string $domain
      */
-    private function __construct(SoapWrapper $soapWrapper)
+    private function __construct(SoapWrapper $soapWrapper, string $domain)
     {
         $this->soapWrapper = $soapWrapper;
+        $this->domain = $domain;
     }
 
     /**
@@ -62,15 +24,19 @@ final class Soap extends AbstractWebService
 
     /**
      * gets the instance via lazy initialization (created on first usage)
+     * @param string $domain
+     * @param array|null $uriList
+     * @return Soap
+     * @throws \Artisaninweb\SoapWrapper\Exceptions\ServiceAlreadyExists
      */
-    public static function getInstance(): Soap
+    public static function getInstance(string $domain, array $uriList = null): Soap
     {
         if (null === static::$instance) {
             $soapWrapper = new SoapWrapper();
-            static::$instance = new static($soapWrapper);
+            static::$instance = new static($soapWrapper, $domain);
+            static::$instance->init($uriList);
         }
 
-        static::$instance->init();
 
         return static::$instance;
     }
@@ -112,7 +78,7 @@ final class Soap extends AbstractWebService
     public function init(array $uriList = null)
     {
         if (empty($uriList)) {
-            $uriList = $this->uriList;
+            return;
         }
 
         foreach ($uriList as $name => $uri) {
@@ -123,15 +89,5 @@ final class Soap extends AbstractWebService
                     ->trace(true);
             });
         }
-    }
-
-    /**
-     * get sign=MD5(key+MD5(username+password)+secret). Secret được cấp bởi API
-     * @return string
-     */
-    public function getSign()
-    {
-        $this->sign = md5($this->key.md5($this->username.$this->password).$this->secret);
-        return $this->sign;
     }
 }

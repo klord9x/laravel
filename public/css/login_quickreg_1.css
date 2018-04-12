@@ -1,0 +1,1061 @@
+p {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    list-style: none
+}
+
+.zme-boxy-wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2000;
+    overflow: hidden
+}
+
+.zme-boxy-modal {
+    background: url(../img/blank.gif) no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f7f7f7f, endColorstr=#7f7f7f7f);
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.lbx_widmid {
+    width: 445px
+}
+
+.clr {
+    clear: both
+}
+
+.zme-boxy {
+    position: absolute;
+    z-index: 1001;
+    _background: transparent;
+    background-color: #e1e1e1;
+    margin: 0;
+    border: 0;
+    zoom: 1;
+    -moz-box-shadow: 0 0 5px #535455;
+    -webkit-box-shadow: 0 0 5px #535455;
+    box-shadow: 0 0 5px #535455;
+    font: normal 11px/18px Tahoma, Helvetica, verdana, arial, sans-serif;
+    color: #333
+}
+
+.zme-boxy-container {
+    background: #fff;
+    border: 1px solid #0087e0
+}
+
+.zme-boxy-title,
+.zme-boxy-title2 {
+    background: url(../img/dkn-bgtitle.1.gif) 0 0 repeat-x;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px
+}
+
+.zme-boxy-title span,
+.zme-boxy-title2 span {
+    display: inline-block;
+    padding-right: 40px;
+    width: auto
+}
+
+a.zme_wg,
+a.zme_wg:hover {
+    color: #476da4
+}
+
+a.zme-boxy-close {
+    background: url(../img/boxy-close_1.02.gif) 0 -24px no-repeat;
+    top: 4px;
+    position: absolute;
+    right: 4px;
+    width: 23px;
+    height: 23px
+}
+
+a.zme-boxy-close:hover {
+    background-position: 0 0
+}
+
+.zme-boxy-footer {
+    margin-top: 10px;
+    padding: 6px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    font-weight: bold;
+    height: 22px;
+    background: #fff
+}
+
+.zme-boxy-content {
+    display: block;
+    background: #fff
+}
+
+.btn_L3,
+.btn_L3:hover,
+.btn_L5,
+.btn_L5:hover,
+.btn_L7,
+.btn_L7:hover {
+    vertical-align: bottom;
+    text-decoration: none;
+    display: inline-block
+}
+
+.btn_L3 em,
+.btn_L5 em,
+.btn_L7 em {
+    font-style: normal;
+    cursor: pointer
+}
+
+.btn_L3 {
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #1a5b99;
+    background-color: #56a7dc;
+    color: #fff
+}
+
+.btn_L3:hover {
+    background-color: #1b8acf
+}
+
+.btn_L3 em {
+    display: block;
+    padding: 0 8px;
+    height: 19px;
+    line-height: 18px;
+    border-top: 1px solid #6ec6ee
+}
+
+.btn_L3:hover em {
+    border-top: 1px solid #3bb3e8
+}
+
+.btn_L5 {
+    border: 1px solid #888;
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    background-color: #f2f2f2
+}
+
+.btn_L5 em {
+    display: block;
+    padding: 0 8px;
+    height: 19px;
+    line-height: 18px;
+    border-top: 1px solid #fff
+}
+
+.btn_L5:hover {
+    color: #3784b2;
+    border: 1px solid #3784b2
+}
+
+.btn_L7,
+.btn_L7:hover {
+    font-size: 11px;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #8b8b8b;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 5px;
+    box-shadow: 0 -5px 5px #e7e7e7 inset;
+    border-radius: 2px
+}
+
+input.zme_wg_input.txtcap {
+    width: 140px!important;
+    float: left;
+    top: -30px;
+    position: absolute;
+    margin-top: 30px!important
+}
+
+#captcha {
+    float: right;
+    height: 50px
+}
+
+.zme_wg_checkbox {
+    float: left;
+    margin-right: 5px!important;
+    width: 16px!important;
+    height: 16px;
+    line-height: 16px;
+    background: none!important;
+    padding: 0!important;
+    border: none!important
+}
+
+.zme_wg_txtintro {
+    color: #666;
+    font-size: 12px;
+    background: #f3faff;
+    padding: 10px 20px;
+    margin: -8px -8px 15px;
+    border-bottom: 1px dashed #e3e7f0
+}
+
+.zme_wg_titlogin {
+    font-size: 12px;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.loginfail {
+    margin-top: -15px;
+    margin-bottom: 10px
+}
+
+.zme_wg_rowlogin.notelog.txtfail {
+    height: 18px;
+    color: #f00;
+    font-size: 15px;
+    margin: -20px 0 0 30px!important;
+    background: url(../img/dkn-icon-error.gif) 0 2px no-repeat;
+    padding: 0 0 0 20px;
+    display: block;
+    float: left
+}
+
+.zme_wg_strowlogin.txtloginby {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.zme_wg_ndrowlogin {
+    top: -20px;
+    font-size: 12px;
+    margin-top: 25px!important
+}
+
+.zme_wg_checkok {
+    background: url(../img/chkok.png) no-repeat;
+    float: left;
+    height: 25px;
+    width: 140px
+}
+
+.zme_wg_loginby {
+    margin-left: 50px;
+    float: left;
+    white-space: nowrap;
+}
+
+.zme_wg_loginby a {
+    background-image: url(../img/img_loginembed.gif);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-left: 7px;
+    display: inline-block;
+    vertical-align: -7px
+}
+
+.zme_wg_loginby a.icoyahoo {
+    background-position: 0 0;
+    margin-left: 0
+}
+
+.zme_wg_loginby a.icotwitter {
+    background-position: -26px 0
+}
+
+.zme_wg_loginby a.icogplus {
+    background-position: -52px 0
+}
+
+.zme_wg_loginby a.icofacebook {
+    background-position: -78px 0
+}
+
+.rem_login_row {
+    padding-left: 140px
+}
+
+.rem_login_row .rem_login {
+    width: 15px;
+    height: 13px;
+    margin-right: 3px;
+    vertical-align: -1px
+}
+
+.rem_login_row a {
+    color: #476da4;
+    text-decoration: none
+}
+
+.rem_login_row a:hover {
+    text-decoration: underline
+}
+
+.zmelogin_box .zme_wg_rowlogin.notelog {
+    display: none;
+    margin-left: 140px
+}
+
+.notelog {
+    display: none;
+    margin-left: 140px
+}
+
+.rem_login_row em {
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    background: #908d8e;
+    vertical-align: 3px;
+    margin: 0 8px 0 5px;
+    vertical-align: 5px
+}
+
+.rem_login {
+    width: 16px!important
+}
+
+.button.green {
+    background: -moz-linear-gradient(center bottom, #52a450, #74b66f) repeat scroll 0 0 transparent;
+    border: 1px solid #64a632;
+    box-shadow: 1px 1px 0 #e5e5e5, 0 1px 0 #96cd6d inset;
+    color: #fff;
+    text-shadow: 1px 1px #5c9630;
+    text-decoration: none
+}
+
+.button {
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 11px/29px Arial, Helvetica, sans-serif;
+    height: 27px;
+    padding: 0 7px;
+    vertical-align: middle
+}
+
+.rightbtn {
+    float: right;
+    margin-right: 10px
+}
+
+.rem_login_box {
+    top: 20px;
+    padding-bottom: 25px;
+    display: none
+}
+
+.content-padding .zme-boxy-content {
+    padding: 8px
+}
+
+.content-padding .zme-boxy-title {
+    display: block
+}
+
+.updatemsg {
+    padding: 20px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 100;
+    box-shadow: 0 0 7px #000
+}
+
+.updatemsg-notradius {
+    padding: 20px;
+    background-color: #fff
+}
+
+.updatemsg .checkdoneicn {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background: url(https://stc-id.zing.vn/login/forgotinfo/images/checkbullet.gif);
+    display: inline-block;
+    vertical-align: -5px
+}
+
+.updatemsg-notradius .checkdoneicn {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background: url(https://stc-id.zing.vn/login/forgotinfo/images/checkbullet.gif);
+    display: inline-block;
+    vertical-align: -5px
+}
+
+.title-alert {
+    background-color: transparent
+}
+
+.connt_error_msg {
+    color: red
+}
+
+.zme_loading {
+    padding: 15px 30px
+}
+
+#zpp_regform .BlockRegister {
+    color: #333;
+    font: 13px Tahoma, Arial, Verdana, sans-serif;
+    margin: 0;
+    line-height: 20px;
+    left: -200px;
+    width: 440px;
+    background: #fff;
+    border: 10px solid #18170f;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 0 0 20px
+}
+
+#zpp_regform .BlockRegister p,
+#zpp_regform .BlockRegister form {
+    margin: 0;
+    padding: 0;
+    font-size: 15px
+}
+
+#zpp_regform .BlockRegister img {
+    border: 0
+}
+
+#zpp_regform .BlockRegister a {
+    outline: 0
+}
+
+#zpp_regform .BlockRegister a:link {
+    color: #900;
+    text-decoration: none
+}
+
+#zpp_regform .BlockRegister a:visited {
+    color: #900;
+    text-decoration: none
+}
+
+#zpp_regform .BlockRegister a:hover {
+    color: #900;
+    text-decoration: underline
+}
+
+#zpp_regform .BlockRegister fieldset {
+    border: 0;
+    background: 0;
+    margin: 0;
+    padding: 0
+}
+
+#zpp_regform .BlockRegister fieldset legend {
+    display: none
+}
+
+#zpp_regform .BlockRegister input,
+#zpp_regform .BlockRegister select,
+#zpp_regform .BlockRegister textarea {
+    font: 13px Tahoma, Arial, Verdana, sans-serif;
+    outline: 0
+}
+
+#zpp_regform .BlockRegister input[type="image"],
+#zpp_regform .BlockRegister input[type="submit"] {
+    outline: 0
+}
+
+#zpp_regform .BlockRegister input {
+    vertical-align: baseline;
+    margin: -1px -2px
+}
+
+html>
+/**/
+
+body #zpp_regform .BlockRegister input {
+    vertical-align: text-bottom;
+    margin: 0
+}
+
+*html #zpp_regform .BlockRegister {
+    height: 510px
+}
+
+#zpp_regform .BlockRegister a:link,
+#zpp_regform .BlockRegister a:visited {
+    color: #4d8ec2;
+    text-decoration: none
+}
+
+#zpp_regform .BlockRegister a:hover {
+    color: #4d8ec2;
+    text-decoration: underline
+}
+
+.BlockRegisterWrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden
+}
+
+* html .BlockRegisterWrapper {
+    position: absolute;
+    width: expression(eval(document.documentElement.clientWidth));
+    height: expression(eval(document.documentElement.clientHeight));
+    top: expression(eval(document.documentElement.scrollTop));
+    left: expression(eval(document.documentElement.scrollLeft))
+}
+
+.BlockRegisterWrapper.modal {
+    background: (../img/blank.gif) no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f7f7f7f, endColorstr=#7f7f7f7f);
+    background-color: rgba(0, 0, 0, .5)
+}
+
+:root .BlockRegisterWrapper.modal {
+    filter: none\0/
+}
+
+#zpp_regform .BlockRegister .NoticeFail {
+    font-size: 18px;
+    padding: 100px 0 20px;
+    text-align: center
+}
+
+#zpp_regform .BlockRegister .Close {
+    background: url(../img/dkn-btclose.gif) 0 0 no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 15px;
+    right: 0
+}
+
+#zpp_regform .BlockRegister #frmWidget div,
+#zpp_regform .BlockRegister #frmWidgetPopup div {
+    margin: 0 auto;
+    width: 380px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#zpp_regform .BlockRegister .Notice {
+    display: none;
+    clear: both
+}
+
+#zpp_regform .BlockRegister .OnInVaLid .Notice {
+    height: 25px;
+    color: #f00;
+    font-size: 15px;
+    background: url(../img/dkn-icon-error.gif) 0 2px no-repeat;
+    padding: 0 0 0 20px;
+    display: block
+}
+
+#zpp_regform .BlockRegister .OnVaLid .Notice {
+    height: 25px;
+    color: #70c638;
+    font-size: 15px;
+    background: url(../img/dkn-icon-accept.gif) 0 2px no-repeat;
+    padding: 0 0 0 20px;
+    display: block
+}
+
+#zpp_regform .BlockRegister .ChangeAcc {
+    position: absolute;
+    top: 145px;
+    right: 35px;
+    text-align: right;
+    font-size: 15px
+}
+
+#zpp_regform .BlockRegister #frmWidget input.Captcha,
+#zpp_regform .BlockRegister #frmWidgetPopup input.Captcha {
+    width: 120px;
+    float: left
+}
+
+#zpp_regform .BlockRegister .ImgCaptcha {
+    padding: 10px 10px 0 0;
+    float: right
+}
+
+#zpp_regform .BlockRegister .Color01 {
+    font-weight: bold;
+    color: #f00
+}
+
+#zpp_regform .BlockRegister .OnWaitting .Notice {
+    height: 25px;
+    color: #b0b0b0;
+    font-size: 15px;
+    background: url(../img/icon_waiting.gif) 0 2px no-repeat;
+    padding: 0 0 0 20px;
+    display: block
+}
+
+#loadingAutocomplete {
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    width: 20px;
+    top: 16px
+}
+
+#loadingimg {
+    background: url("https://stc-id.zing.vn/idzing/theme/default//images/quickreg/icon-loading.gif") no-repeat scroll 0 2px transparent!important;
+    height: 20px;
+    width: 20px
+}
+
+#zpp_regform .BlockRegister input:required {
+    border: 1px solid rgba(253, 8, 8, 0.29)
+}
+
+#zpp_regform .BlockRegister #frmWidget input,
+#zpp_regform .BlockRegister #frmWidgetPopup input {
+    font-size: 20px;
+    color: #000!important;
+    width: 350px;
+    line-height: 30px;
+    padding: 7px 15px;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 5px;
+    background: #efefef;
+    box-sizing: content-box
+}
+
+#zpp_regform :-moz-placeholder {
+    color: #000
+}
+
+#zpp_regform ::-webkit-input-placeholder {
+    color: #000
+}
+
+#zpp_regform ::-moz-placeholder {
+    color: #000
+}
+
+#zpp_regform :-ms-input-placeholder {
+    color: #000
+}
+
+#zpp_regform .BlockRegister #frmWidget input:focus {
+    background: #c1daf7
+}
+
+#zpp_regform .BlockRegister #frmWidget .OnInVaLid input {
+    background: #ffbaac
+}
+
+#zpp_regform .BlockRegister #frmWidget .OnVaLid input {
+    background: #ecf7e4
+}
+
+#zpp_regform .BlockRegister #frmWidget input.submit,
+#zpp_regform .BlockRegister #frmWidgetPopup input.submit {
+    background: url(../img/dkn-btsubmit.gif) 0 0 no-repeat;
+    color: #FFF;
+    width: 380px;
+    height: 50px;
+    margin: 0 auto 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 30px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold
+}
+
+#zpp_regform .BlockRegister .Agree {
+    width: 100%;
+    color: #b5b5b5;
+    font-size: 12px
+}
+
+#zpp_regform .BlockRegister #frmWidget input.InputAgree,
+#zpp_regform .BlockRegister #frmWidgetPopup input.InputAgree {
+    float: left;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: 0;
+    padding: 0;
+    border: 0
+}
+
+#zpp_regform .BlockRegister #frmWidget input.InputOff {
+    background: url(../img/dkn-btsubmit-off.png) 0 0 no-repeat!important;
+    cursor: default!important
+}
+
+#zpp_regform .BlockRegister #frmWidget input.submit:hover,
+#zpp_regform .BlockRegister #frmWidgetPopup input.submit:hover {
+    background: url(../img/dkn-btsubmit-o.gif) 0 0 no-repeat
+}
+
+#zpp_regform .BlockRegister.FormCaptcha {
+    height: 510px
+}
+
+#zpp_regform .BlockRegister a.ThoaThuan {
+    color: #b7b7b6!important;
+    text-decoration: underline
+}
+
+#zpp_regform .BlockRegister a.ThoaThuan:hover {
+    text-decoration: underline
+}
+
+#zpp_regform .BlockRegister a.DownloadSuccess:link,
+#zpp_regform .BlockRegister a.DownloadSuccess:visited {
+    background: url(https://stc-id.zing.vn/idzing/theme/default/images/quickreg/dkn-btsubmit.gif) 0 0 no-repeat;
+    color: #FFF;
+    width: 380px;
+    height: 50px;
+    margin: 10px auto 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 30px;
+    border: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: block
+}
+
+#zpp_regform .BlockRegister a.DownloadSuccess:hover {
+    background: url(https://stc-id.zing.vn/idzing/theme/default/images/quickreg/dkn-btsubmit-o.gif) 0 0 no-repeat
+}
+
+#zpp_regform ul.TabPageLogin {
+    height: 75px;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    overflow: hidden;
+    background: url(../img/dkn-bgtitle.1.gif) 0 0 repeat-x;
+    width: 420px
+}
+
+#zpp_regform ul.TabPageLogin li {
+    display: inline;
+    padding: 0;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 22px
+}
+
+#zpp_regform ul.TabPageLogin li a:link,
+#zpp_regform ul.TabPageLogin li a:visited {
+    display: block;
+    padding: 0 20px 11px 20px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    color: #FFF;
+    margin: 0 4px 0 0
+}
+
+#zpp_regform ul.TabPageLogin li a span {
+    display: block;
+    padding: 11px 0 0 0;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 2px solid #FFF
+}
+
+#zpp_regform ul.TabPageLogin li a:hover {
+    color: #c1daf7;
+    text-decoration: none
+}
+
+#zpp_regform ul.TabPageLogin li a:hover span {
+    color: #c1daf7;
+    text-decoration: none;
+    border-bottom: 2px solid #c1daf7
+}
+
+#zpp_regform ul.TabPageLogin li.Active a:link,
+#zpp_regform ul.TabPageLogin li.Active a:visited,
+#zpp_regform ul.TabPageLogin li.Active a:hover {
+    background: #ebebeb;
+    color: #246dab;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#zpp_regform ul.TabPageLogin li.Active a span,
+#zpp_regform ul.TabPageLogin li.Active a:hover span {
+    background: #ebebeb;
+    cursor: default;
+    color: #246dab;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 0
+}
+
+#zpp_regform .TabContent {
+    display: none;
+    height: auto
+}
+
+#zpp_regform #tabQuickReg {
+    display: block
+}
+
+#zpp_regform ul.Disc {
+    width: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block
+}
+
+#zpp_regform ul.Disc li {
+    list-style-type: none;
+    background: url(../img/icon-disc.gif) 0 7px no-repeat;
+    margin-bottom: 10px;
+    padding: 0 0 0 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #b0b0b0
+}
+
+#zpp_regform .BlockRegister #frmWidgetPopup div.BtPlayNow {
+    height: 70px
+}
+
+#zpp_regform .BlockRegister p.DangNhapIE6 {
+    width: 100px;
+    float: left;
+    padding-left: 40px
+}
+
+div.BtPlayNow {
+    height: 70px;
+    width: 380px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+div.BtPlayNow input.submit {
+    font-size: 25px!important;
+    background: url(../img/dkn-btsubmit.gif) 0 0 no-repeat;
+    color: #FFF;
+    width: 380px;
+    height: 50px;
+    margin: 0 auto 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 30px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold
+}
+
+div.BtPlayNow input.submit:hover {
+    background: url(../img/dkn-btsubmit-o.gif) 0 0 no-repeat
+}
+
+#zpp_regform .BlockRegister p.DangNhapIE6 a:link,
+#zpp_regform .BlockRegister p.DangNhapIE6 a:visited {
+    text-decoration: none;
+    background: #4a8cc1;
+    color: #FFF;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100px
+}
+
+#zpp_regform .BlockRegister p.DangNhapIE6 a:hover {
+    color: #c1daf7;
+    text-decoration: none
+}
+
+#zpp_regform #suggest p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #000
+}
+
+#zpp_regform #suggest {
+    width: 347px;
+    padding: 10px 15px 17px;
+    background: #fcfcfc;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 2px #888;
+    -webkit-box-shadow: 1px 1px 2px #888;
+    box-shadow: 1px 1px 2px #888;
+    position: absolute;
+    z-index: 10;
+    top: 175px;
+    left: 30px
+}
+
+#zpp_regform #suggest div {
+    width: 316px;
+    font-size: 20px;
+    line-height: 26px;
+    height: 26px;
+    display: block;
+    color: #4d8ec2;
+    text-decoration: none;
+    padding: 3px 15px;
+    cursor: pointer
+}
+
+#zpp_regform #suggest div.select {
+    color: #4d8ec2;
+    text-decoration: underline
+}
+
+#zpp_regform #suggest div.over {
+    color: #4d8ec2;
+    text-decoration: underline
+}
+
+.zme_wg_strowlogin {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    z-index: 100
+}
+
+.zme_wg_strowlogin label {
+    display: block;
+    color: #000;
+    top: 6px;
+    left: 6px;
+    pointer-events: none;
+    display: block;
+    font-size: 20px;
+    line-height: 30px
+}
+
+.placeholderWrap {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    display: block
+}
+
+.placeholderWrap label {
+    display: block;
+    color: #000;
+    top: 6px;
+    left: 6px;
+    pointer-events: none;
+    display: block;
+    font-size: 20px;
+    line-height: 30px
+}
+
+.placeholder-focus {
+    z-index: -100
+}
+
+.placeholder-changed {
+    display: none
+}
+
+.zme_wg_rdrowlogin {
+    display: none
+}
+
+.suggestBox {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #efefef;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 2px #888;
+    top: 80px;
+    position: absolute!important;
+    width: 315px!important;
+    height: auto;
+    z-index: 102;
+    font-size: 20px;
+    display: none;
+    padding: 3px 15px
+}
+
+.suggest_name {
+    color: #4d8ec2;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
+    height: 32px;
+    width: 320px
+}
+
+.suggest_name:hover {
+    text-decoration: underline
+}
+
+.suggest_name_selected {
+    color: #4d8ec2;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
+    height: 32px;
+    width: 320px;
+    text-decoration: underline
+}
+
+#chk_acc_ok {
+    display: block;
+    position: absolute!important;
+    top: -20px;
+    left: 0
+}
+
+.invalid {
+    background: #ffbaac!important
+}
+
+.valid {
+    background: #ecf7e4!important
+}
+
+.policy {
+    color: #b5b5b5;
+    margin-top: 100px!important
+}

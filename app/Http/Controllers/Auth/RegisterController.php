@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Validation\ValidationException;
@@ -35,15 +36,17 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    private $_passportHandler;
 
     /**
      * Create a new controller instance.
      *
-     * @return void
+     * @param PassportHandler $passportHandler
      */
-    public function __construct()
+    public function __construct(PassportHandler $passportHandler)
     {
-        $this->middleware(['guest', 'passport:'.Soap::PASSPORT_FUNCTION_REGISTER]);
+        $this->middleware(['guest', 'passport:'.PassportHandler::PASSPORT_FUNCTION_REGISTER]);
+        $this->_passportHandler = $passportHandler;
     }
 
     /**
@@ -77,10 +80,10 @@ class RegisterController extends Controller
             $validator = Validator::make([], []);
             // add an error
 //            $validator->errors()->add('some_field', 'some_translated_error_key');
-            $messages = PassportHandler::messages();
+            $messages = $this->_passportHandler->messages();
             $error = $messages[$status];
             $key = key($error);
-            $validator->getMessageBag()->add($key, $error[$key]);
+            $validator->getMessageBag()->add($key, '['.$status.'] '.$error[$key]);
 
             throw new ValidationException($validator);
         }

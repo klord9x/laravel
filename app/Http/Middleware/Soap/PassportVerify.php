@@ -33,10 +33,10 @@ class PassportVerify
         $response = null;
         $passPort = new PassportHandler();
         switch ($function) {
-            case Soap::PASSPORT_FUNCTION_LOGIN:
+            case PassportHandler::PASSPORT_FUNCTION_LOGIN:
                 $response = $passPort->login($request);
                 break;
-            case Soap::PASSPORT_FUNCTION_REGISTER:
+            case PassportHandler::PASSPORT_FUNCTION_REGISTER:
                 $response = $passPort->register($request);
                 break;
             default:

